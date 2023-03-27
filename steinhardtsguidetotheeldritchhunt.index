@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Steinhardt's Guide to the Eldritch Hunt</name>
+		<description>
+Inspired by Lovecraftian Horror and the Soulsborne franchise, you'll discover a victorian setting crawling with nightmarish monsters, eldritch moons, and the ever-looming threat of madness, which fundamentally alter the world and how players interact with it.</description>
+		<author url="https://www.monkeydm.com/1-steinhardt">MonkeyDM</author>
+		<update version="0.0.1">
+			<file name="steinhardtsguidetotheeldritchhunt.index" url="" />
+		</update>
+	</info>
+	<files>
+		<file name="class-jaeger.xml" url="" />
+		<file name="race-accursedtiefling.xml" url="" />
+		<file name="race-cursedblood.xml" url="" />
+		<file name="race-demidritch.xml" url="" />
+		<file name="race-manikin.xml" url="" />
+		<file name="race-scourgeborn.xml" url="" />
+		<file name="Items-weapons.xml" url="" />
+		<file name="items-magicitems.xml" url="" />
+		<file name="feats.xml" url="" />
+		<file name="spells.xml" url="" />
+		<file name="deities.xml" url="" />
+		<file name="pactboon-pactofthetrigger.xml" url="" />
+		<file name="patron-thevoid.xml" url="" />
+		<file name="subclass-bloodarcher.xml" url="" />
+		<file name="subclass-circleofsymbiosis.xml" url="" />
+		<file name="subclass-collegeoftheapocalypse.xml" url="" />
+		<file name="subclass-guardiandomain.xml" url="" />
+		<file name="subclass-livingnightmare.xml" url="" />
+		<file name="subclass-oathoftheeldritchhunt.xml" url="" />
+		<file name="subclass-osteomancer.xml" url="" />
+		<file name="subclass-pathofradiance.xml" url="" />
+		<file name="subclass-pathoftheearthbreaker.xml" url="" />
+		<file name="subclass-pathofthelightningvessel.xml" url="" />
+		<file name="subclass-scionofmadness.xml" url="" />
+		<file name="subclass-shadow.xml" url="" />
+		<file name="subclass-wayofthefiredancer.xml" url="" />
+		<file name="subrace-deeponedwarf.xml" url="" />
+	</files>
+</index>
