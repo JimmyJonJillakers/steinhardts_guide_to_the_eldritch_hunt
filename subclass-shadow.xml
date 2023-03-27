@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Shadow" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_SHADOW">
+		<supports>Roguish Archetype</supports>
+		<description>
+			<p>The origin of the Shadows is shrouded in mystery. Some say that it was first created by a group of nobles who stole a tome of forbidden magic from an errant cursedblood scholar, while others believe that the tome was granted to them by an entity that resides deep in the cosmos, in exchange for an unspoken vow.</p>
+			<p class="indent">Regardless of their organization’s origins, today shadows are a closely guarded secret of the Silverblood Royalty, a tool meant for discreet political assassinations and silent espionage. Mere legends to the common folk, these rogues blend into the darkness, vanishing from sight, only to reappear unseen calling forth their dreadful rifles to dispatch their foes with deadly precision.</p>
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_UMBRAL_WEAPON" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_SHADOW_MOVEMENT" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_TENEBROUS_BODY" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_GRIM_CURSE" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_VEIL_OF_SHADOWS" />
+		</description>
+		<sheet display="false">
+			<description>These rogues blend into the darkness, vanishing from sight, only to reappear unseen calling forth their dreadful rifles to dispatch their foes with deadly precision.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_UMBRAL_WEAPON" level="3"/>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_SHADOW_MOVEMENT" level="3"/>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_TENEBROUS_BODY" level="9"/>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_GRIM_CURSE" level="13"/>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_VEIL_OF_SHADOWS" level="17"/>
+		</rules>
+	</element>
+	<element name="Umbral Weapon" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_UMBRAL_WEAPON">
+		<description>
+			<p>At 3rd level, you gain proficiency with firearms, and learn to make an <i>Umbral Weapon</i> by wreathing a rifle in shadows with a grim ritual. You perform the ritual over the course of 1 hour, which can be done during a short rest. The rifle must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and bond with it.</p>
+			<p>Once you have bonded a rifle to yourself, you can't be disarmed of it unless you are incapacitated. If it is on the same plane of existence, you can summon the rifle (no action required) on your turn, causing it to teleport instantly to your hand. Your <i>Umbral Weapon</i> keeps its original properties with the following alterations when you use it: it doesn't have the barrel property, it doesn’t require ammunition, and it doesn’t make sound when fired.</p>
+			<p>You can only have one bonded weapon. If you attempt to bond with a second weapon, your bond with the first one ends.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" />
+		</rules>
+	</element>
+	<element name="Shadow Movement" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_SHADOW_MOVEMENT">
+		<description>
+			<p>Starting at 3rd level, you can become one with the shadows. When you are in darkness, you can use your bonus action to take the Hide action with advantage on the Dexterity (Stealth) roll and turn into a shadowy, amorphous version of yourself. While in this form, you have advantage on Dexterity (Stealth) checks, can move through a space as narrow as 1 inch wide without squeezing, have a climbing speed equal to your walking speed, and are incapacitated. This transformation ends after 1 minute, if you enter dim or bright light, or if you take damage.</p>
+			<p>Alternatively, you choose to end the transformation early (no action required) on your turn. If you do so and are in darkness, you can make one weapon attack with your <i>Umbral Weapon</i>, weaving shadows into a bullet; if you miss, your location isn’t revealed. The damage die of this attack is 1d4, instead of the weapon’s regular damage die.</p>
+		</description>
+		<sheet>
+			<description level="3">When you are in darkness, use your bonus action to take the <i>Hide</i> action with advantage on the Dexterity (Stealth) roll to transform for up to 1 minute. While in this form, you have advantage on Dexterity (Stealth) checks, can move through 1-inch wide spaces, have a climbing speed equal to your walking speed, and are incapacitated. If you end this form early while in darkness, you can make a weapon attack with your <i>Umbral Weapon</i> dealing 1d4 damage and not revealing your position on a miss.</description>
+			<description level="9">When you are in darkness, use your bonus action to take the <i>Hide</i> action with advantage on the Dexterity (Stealth) roll to transform for up to 1 hour. While in this form, you have advantage on Dexterity (Stealth) checks, can move through 1-inch wide spaces, have a climbing speed equal to your walking speed, and are incapacitated. If you end this form early while in darkness, you can make a weapon attack with your <i>Umbral Weapon</i> dealing 1d4 damage and not revealing your position on a miss.</description>		
+		</sheet>
+	</element>
+	<element name="Tenebrous Body" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_TENEBROUS_BODY">
+		<description>
+			<p>By 9th level, your eyes are adapted to tenebrosity. You can see normally in darkness and dim light, both magical and nonmagical, to a distance of 120 feet. In addition, you can maintain the transformation of your Shadow Movement for up to 1 hour.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant  type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+	<element name="Grim Curse" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_GRIM_CURSE">
+		<description>
+			<p>Starting at 13th level, you can animate the shadows of your foes, turning them against each other. When you hit a creature with your <i>Umbral Weapon</i> and deal Sneak Attack damage to it, you can sacrifice some of your Sneak Attack damage dice, and instead of inflicting damage, force the target to make a saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failure, it suffers a condition until the start of your next turn. If you and the target are in darkness, the target suffers a 1d6 penalty to its save. The type of saving throw and resulting condition are based on the number of Sneak Attack damage dice you sacrifice.</p>
+			<table>
+				<thead>
+					<tr><td>Sneak Attack Dice Sacrificed</td><td>Condition</td><td>Save</td></tr>
+				</thead>
+				<tr><td>1</td><td>Prone</td><td>Dexterity</td></tr>
+				<tr><td>2</td><td>Restrained</td><td>Strength</td></tr>
+				<tr><td>3</td><td>Blinded</td><td>Constitution</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You can sacrifice Sneak Attack dice to inflict conditions with your <i>Umbral Weapon</i>. The target must make a saving throw higher than {{grim curse:dc}} (-1d6 if in darkness) or suffer a condition based on the number of Sneak Attack dice sacrificed (see the table).</description>
+		</sheet>
+		<rules>
+			<stat name="grim curse:dc" value="8" />
+			<stat name="grim curse:dc" value="dexterity:modifier" />
+			<stat name="grim curse:dc" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Veil of Shadows" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_SHADOW_VEIL_OF_SHADOWS">
+		<description>
+			<p>Beginning at 17th level, the shadows beckon you. When you use your Uncanny Dodge feature, you can choose to teleport to an unoccupied space you can see within 30 feet of you in darkness and make one attack with your umbral weapon against the attacker. If there are no such spaces available, you can’t teleport, but you can make the attack if you are already in darkness.</p>
+		</description>
+		<sheet>
+			<description>When you use your Uncanny Dodge feature, you can choose to teleport to an unoccupied space you can see within 30 feet and make 1 attack with your <i>Umbral Weapon</i> against the attacker.</description>
+		</sheet>
+	</element>
+</elements>

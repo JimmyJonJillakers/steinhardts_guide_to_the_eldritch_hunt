@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Way of the Fire Dancer" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_WAY_OF_THE_FIRE_DANCER">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>The fire dancers carry an almost extinct tradition. Once a trading group, they considered themselves a family of a single creed: “Those who harm us will bathe in flames." This nomadic group of seasoned warriors welcomed all walks of life, regardless of origin, status, or influence; as long as one conducted oneself with respect towards their fellows, the caravans would open their door. Their ironclad creed and welcoming nature was their downfall.</p>
+			<p>Upon arriving in Luyarnha, they were accused of bringing the scourge with them. After all, the dancing flames didn’t affect the city before their arrival. This lie, like so many told, carried a kernel of truth that was exploited to bend others to the city’s will. For this sin they were imprisoned, left to starve and forbidden from practicing their martial arts.</p>
+			<p>Such a treatment couldn’t break their will; to hide their practice of martial arts, the traveling band took the name of fire dancers, and hid their powers within their dance. For years they have endured, many escaping the prison with the aid of their fellows, yet the bonds of family entrap more firmly than any chain could. Even those who escape refuse to leave the city until their kin are freed and their name is cleared.</p>
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_BLAZING_PERFORMER" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_DANCE_OF_FIRE" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_SCORCHING_VORTEX" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_FLAMES_OF_REDEMPTION" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_PURIFYING_FLAMES" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_ONE_WITH_THE_FIRE" />
+		</description>
+		<sheet display="false">
+			<description>You follow an ancient tradition that carries the torch of divine flame to light the way.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_BLAZING_PERFORMER" level="3"/>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_DANCE_OF_FIRE" level="3"/>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_SCORCHING_VORTEX" level="6"/>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_FLAMES_OF_REDEMPTION" level="11"/>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_PURIFYING_FLAMES" level="11"/>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_ONE_WITH_THE_FIRE" level="17"/>
+		</rules>
+	</element>
+	<element name="Blazing Performer" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_BLAZING_PERFORMER">
+		<description>
+			<p>At 3rd level, you’ve trained your body to dance through flames. You gain proficiency in the Performance or Acrobatics skill, and your proficiency bonus is doubled for any ability check you make that uses that proficiency.</p>
+			<p>In addition, you gain resistance to fire damage. If you already have this resistance, instead, if you take fire damage, you can reduce that damage by 1d6 (after the resistance applies).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="performance" value="proficiency" bonus="double"/>
+			<stat name="acrobatics" value="proficiency" bonus="double"/>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE"/>
+		</rules>
+	</element>
+	<element name="Dance of Fire" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_DANCE_OF_FIRE">
+		<description>
+			<p>At 3rd level, you are a master at weaving flames through your use of ki, creating a deadly dance. When you spend a ki point during your turn, your monk weapons and unarmed strikes catch fire until the start of your next turn. While on fire, they deal additional fire damage equal to your Wisdom modifier.</p>
+			<p>In addition, while your flames are active if a creature misses you with a melee attack, you can use your reaction to make an unarmed strike or spend a ki point to use your Flurry of Blows feature against it.</p>
+		</description>
+		<sheet>
+			<description>When you spend a ki point during your turn, your monk weapons and unarmed strikes deal {{wisdom:modifier}} extra fire damage. If a creature misses you while this is active, you may use a reaction to make an unarmed strike or spend a ki point to use your Flurry of Blows against it.</description>
+			<description level="17">When you spend a ki point during your turn, your monk weapons and unarmed strikes deal {{wisdom:modifier}} extra fire damage. If a creature misses you while this is active, you may use a reaction to make an unarmed strike or spend a ki point to use your Flurry of Blows against it. You also become immune to fire damage and gain resistance to bludgeoning, piercing, and slashing damage.</description>
+		</sheet>
+	</element>
+	<element name="Scorching Vortex" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_SCORCHING_VORTEX">
+		<description>
+			<p>Starting at 6th level, you learn to entrap your foes in the flames of your dance.</p>
+			<p>When you use Step of the Wind, if you move through each space adjacent to a creature on your turn, you create a vortex of fire around them. The target must succeed on a Dexterity saving throw against your ki save DC or take 2d6 fire damage and become trapped in a vortex of flames that appears in its space. On a success, the target takes half as much damage and the vortex fails to appear. The vortex is opaque and obstructs line of sight. If the target attempts to move out of the flames, it must first succeed on a Wisdom saving throw against your ki save DC. On a failure, it takes 1d6 fire damage and is charmed by the flames, causing its movement speed to be reduced to 0 until the start of its next turn, at which point the vortex and its effects end. On a success, it moves through the vortex, ending the effect. These flames do not damage other creatures.</p>
+			<p>Once you use this feature a number of times equal to 1 + your Wisdom modifier, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="{{scorching:usage}}/Long Rest">
+			<description>If you encircle a creature with Step of the Wind on your turn, the creature must make a DC {{ki:dc}} Dexterity save or be trapped in an obscuring vortex and take 2d6 fire damage. A success halves the damage and removes the vortex. To escape, the creature must make a DC {{ki:dc}} Wisdom save. On failure, it will take 1d6 fire damage and be reduced to 0 speed.</description>
+		</sheet>
+		<rules>
+			<stat name="scorching:usage" value="1" />
+			<stat name="scorching:usage" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Flames of Redemption" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_FLAMES_OF_REDEMPTION">
+		<description>
+			<p>At 11th level, any fire damage that you deal ignores fire resistance. In addition, the clarity of your mind allows you to generate flames that many would call divine; you can replace any fire damage that you deal with radiant damage.</p>
+		</description>
+		<sheet>
+			<description>Your fire damage ignores resistances. You may replace any fire damage with radiant damage.</description>
+		</sheet>
+	</element>
+	<element name="Purifying Flames" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_PURIFYING_FLAMES">
+		<description>
+			<p>At 11th level, your flames burn away all impurities. As an action, you can expend 2 ki points to touch a creature and infuse them with your flames. The target can end one poison, charm, or short-term madness effect afflicting it.</p>
+			<p class="flavor">The unfair treatment that some fire dancers have received in their life has created deep resentment, warping their pure nature and the flames they wield. These fire dancers wield a dark flame, said to devour life. If you wish to play such a character, replace any mention of fire damage, resistance, or immunity in the subclass abilities with necrotic damage, resistance, or immunity, respectively, and you can choose not to gain the Flames of Redemption feature.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can spend 2 ki points to cure a creature you can touch of one poison, charm, or short-term madness.</description>
+		</sheet>
+	</element>
+	<element name="One With the Fire" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_ONE_WITH_THE_FIRE">
+		<description>
+			<p>At 17th level, you are a master of the flames. When you deal fire damage with a monk weapon, if the target is a creature or a flammable object, it ignites. Until the target, or a creature within 5 feet of it, takes an Action to douse the flames, the target takes fire damage equal to your Wisdom modifier at the start of each of its turns.</p>
+			<p>In addition, while under the effects of Dance of Fire, your body merges with the flames. For the duration, you become immune to fire damage and have resistance against bludgeoning, piercing, and slashing damage.</p>
+		</description>
+		<sheet>
+			<description>When a creature takes fire damage from you, it catches on fire, taking {{wisdom:modifier}} fire damage at the start of each of its turns until the target or a creature within 5 feet takes an action to put it out</description>
+		</sheet>
+	</element>
+</elements>

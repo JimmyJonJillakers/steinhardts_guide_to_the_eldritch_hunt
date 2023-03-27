@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Circle of Symbiosis" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_CIRCLE_OF_SYMBIOSIS">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>The Circle of Symbiosis allows druids devoted to Nature to become one with it - in the most real sense of the word. These druids have mastered osteomancy and use it to sever their own limbs and replace them with fragments of the natural world. To become“awakened symbiotic entities”- something others would decry as aberrations - they graft one or multiple limbs to their body. Deer hind-legs replace their own, tree branches take over their arms, and the most devoted and zealous replace their head with that of an animal.</p>
+			<p>By reveling in such powers, the Circle of Symbiosis seeks to make all living beings one with Nature, or else. No sacrifice is too great for the cause. As such, even children of the Circle are forced to undergo these often deadly abscissions, developing their rampaging powers soon after and with great affinity. As these druids age, they become indistinguishable from their grafts, their humanity slowly waning to make way for something more implacable, more unyielding. Their practices have shunned them from most civilized locales, a punishment that hasn’t stopped them from recruiting - or abducting - more to join their cause.</p>
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_CIRCLE_SPELLS" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_WICKERBONE_BEHEMOTH" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_GRAFTED_POWERS" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_EXTRA_ATTACK" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_NATURES_WRATH" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_BRIARHEART" />
+		</description>
+		<sheet display="false">
+			<description>The Circle of Symbiosis allows druids devoted to Nature to gain its power through grafting it upon themselves.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_CIRCLE_SPELLS" level="2" />
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_WICKERBONE_BEHEMOTH" level="2" />
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_GRAFTED_POWERS" level="2" />
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_EXTRA_ATTACK" level="6" />
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_NATURES_WRATH" level="10" />
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_BRIARHEART" level="14" />
+		</rules>
+	</element>
+	<element name="Circle of Symbiosis Spells" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_CIRCLE_SPELLS">
+		<supports>Circle Spells</supports>
+		<description>
+			<p>Your fusion with nature through Osteomancy grants you access to certain spells. At 2nd level, you learn the <i>Shillelagh</i> cantrip.</p>
+			<p>At 3rd, 5th, 7th, and 9th level you gain access to the circle spells listed for that level in the Circle of Symbiosis Spells table. Once you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd</td><td><em>shillelagh</em></td></tr>
+				<tr><td>3rd</td><td><em>barkskin, skeletal tail</em></td></tr>
+				<tr><td>5th</td><td><em>osseus cage, plant growth</em></td></tr>
+				<tr><td>7th</td><td><em>maiden of bones, stoneskin</em></td></tr>
+				<tr><td>9th</td><td><em>forest of dread, tree stride</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHILLELAGH" level="2" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BARKSKIN" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_SGEH_SPELL_SKELETAIL" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_SGEH_SPELL_OSSEOUS_CAGE" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PLANT_GROWTH" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_SGEH_SPELL_MAIDEN_OF_BONES" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_SGEH_SPELL_FOREST_OF_DREAD" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TREE_STRIDE" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+	<element name="Wickerbone Behemoth" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_WICKERBONE_BEHEMOTH">
+		<description>
+			<p>Starting at 2nd level, you can unleash the vicious natural powers held amidst your flesh. As an action, you may expend a use of your Wild Shape to awaken Nature’s wrath, turning into a behemoth, rather than transforming into a beast form. A deer skull, wooden skin, goat hooves or other such natural gifts overtake your body. While this feature is active, you gain the following benefits:</p>
+			<ul>
+				<li>Your arms count as clubs, each under the effect of the shillelagh spell.</li>
+				<li>You are under the effect of the barkskin spell, although you do not need to concentrate on it. In addition, whenever a creature damages you with an attack, your skin splinters and all creatures you choose within 5 feet of you take 1d4 magical piercing damage</li>
+				<li>The stress of battle stimulates your organism to fight and survive. At the start of each of your turns, you regain hit points equal to half the total damage taken since the start of your previous turn (rounded down, minimum of 0), up to a maximum of three times your Wisdom modifier. This regeneration doesn’t work if you are unconscious.</li>
+			</ul>
+			<p>These benefits last for 10 minutes, or until you use your Wild Shape again. You cannot use this transformation if you are wearing armor.</p>
+		</description>
+		<sheet>
+			<description>If you aren't wearing armor, you can Wild Shape into a behemoth. For 10 minutes, your arms count as clubs under the effects of Shillelagh, you are under the effects of the Barkskin spell, and at the start of each turn you regain health equal to half the damage taken since the start of your last turn to a maximum of {{behemoth:regenmax}}. Whenever you are damaged by a creature, deal 1d4 magical piercing damage to all creatures you choose within 5ft of you.</description>
+			<description level="10">If you aren't wearing armor, you can Wild Shape into a behemoth. For 10 minutes, your arms count as clubs under the effects of Shillelagh, your size becomes large, and at the start of each turn you regain health equal to half the damage taken since the start of your last turn to a maximum of {{behemoth:regenmax}}. Whenever you are damaged by a creature, deal 1d4 magical piercing damage to all creatures you choose within 5ft of you. Whenever you deal bludgeoning, piercing, or slashing damage, gain 1d8 + {{wisdom:modifier}} temp hp</description>
+		</sheet>
+		<rules>
+			<stat name="behemoth:regenmax" value="wisdom:modifier" />
+			<stat name="behemoth:regenmax" value="wisdom:modifier" />
+			<stat name="behemoth:regenmax" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Grafted Powers" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_GRAFTED_POWERS">
+		<description>
+			<p>The multiple aspects of nature that you forcefully implanted within you manifest themselves in other aspects of your life. At 2nd level, you gain one of the following benefits.</p>
+			<ul>
+				<li><strong>Bear Back. </strong>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift, as well as for grappling checks. In addition, you can add your Wisdom modifier to any Strength check that you make.</li>
+				<li><strong>Deer Head. </strong>You have advantage on Wisdom (Perception) checks that rely on sight or smell.</li>
+				<li><strong>Goat Hoooves. </strong>You have advantage on Strength and Dexterity saving throws made against effects that would knock you prone. You gain a climbing speed equal to your walking speed.</li>
+			</ul>
+			<p>These elements can be visible or not, or be represented by other natural aspects. Choose at your discretion when selecting this class.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Grafted Power" supports="Grafted Powers" />
+		</rules>
+	</element>
+	<element name="Bear Back" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_GRAFTED_POWER_BEAR_BACK">
+		<supports>Grafted Powers</supports>
+			<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift, as well as for grappling checks. In addition, you can add your Wisdom modifier to any Strength check that you make.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining carrying capacity, push/drag/lift load, and grappling.</description>
+		</sheet>
+		<rules>
+			<stat name="strength:save:misc" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Deer Head" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_GRAFTED_POWER_DEER_HEAD">
+		<supports>Grafted Powers</supports>
+		<description>
+			<p>You have advantage on Wisdom (Perception) checks that rely on sight or smell.</p>
+		</description>	
+		<sheet>
+			<description>You have advantage on Wisdom (Perception) checks that rely on sight or smell.</description>
+		</sheet>
+	</element>
+	<element name="Goat Hooves" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_GRAFTED_POWER_GOAT_HOOVES">
+		<supports>Grafted Powers</supports>
+		<description>
+			<p>You have advantage on Strength and Dexterity saving throws made against effects that would knock you prone. You gain a climbing speed equal to your walking speed.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Strength and Dexterity saves against effects that would knock you prone.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:climb" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_EXTRA_ATTACK">
+		<description>
+			<p>At 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of these attacks.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn. You may cast a cantrip in place of one of these attacks.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="6" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Nature's Wrath" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_NATURES_WRATH">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description>You are permanently under the effects of the Barkskin spell.</description>
+		</sheet>
+	</element>
+	<element name="Briarheart" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_SYMBIOSIS_BRIARHEART">
+		<description>
+			<p>At 14th level, your fusion is complete, and your heart is absorbed, its sacrifice making way for a new heart, one that can fully channel the rage of the natural world. Your melee weapon attack deals bonus damage equal to your Wisdom modifier on a hit.</p>
+			<p>In addition, when you drop to 0 hit points, your body can grant its life to those around you. Choose two willing creatures that you can see within 30 feet. They gain the benefits of your Wickerbone Behemoth feature for 1 minute and can choose to immediately transform (no action required).</p>
+			<p>Once you use this ability, you must finish a long rest before you can use it again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you drop to 0 hit points, choose 2 willing creatures you can see within 30 feet. For 1 minute, they can choose to use your Wickerbone Behemoth transformation for no action.</description>
+		</sheet>
+	</element>
+</elements>

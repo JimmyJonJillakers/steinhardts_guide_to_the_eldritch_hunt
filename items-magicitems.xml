@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Big Bertha" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_BIG_BERTHA">
+		<description>
+			<p class="flavor">Why bother cutting beasts when you can just blow them to smithereens?</p>
+			<p class="indent">This moongold inlaid cannon deals an extra 1d4 damage to any non-humanoid creatures it hits. Moongold acts as a guiding light in the darkness; creatures holding or wearing moongold have advantage on saving throws against being frightened and madness.</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this weapon</p>
+			<p class="indent">As a bonus action, you can magically rotate the dials on the cannon to infuse your loaded ammo with violent powers. Your next attack deals magical damage and you can choose one of the following effects.</p>
+			<ul>
+				<li><b>Forceful Infusion</b>On a hit, the target takes an additional 1d6 bludgeoning damage and must succeed on a Strength saving throw or be pushed 15 feet away and knocked prone. Alternatively, if you are standing on a solid surface and instead fire the cannon directly at your feet, the explosion pushes you into the air and you land in a square of your choice within 30 feet of the explosion’s origin.</li>
+				<li><b>Incendiary Infusion</b>On a hit, the target takes an additional 3d4 fire damage.</li>
+				<li><b>Unstable Infusion</b>On a hit, the target takes an additional 1d8 cold damage and the terrain in a 10-foot radius centered on the target is covered in arcane mist, becoming difficult terrain for the next minute.</li>
+			</ul>
+			<div element="ID_SGEH_WEAPON_PROPERTY_SPECIAL_CANNON" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="rarity">rare</set>
+			<set name="type">Cannon</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="90">90 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">120/210</set>
+			<set name="damage" type="piercing">3d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS</set>
+			<set name="barrel">1</set>
+		</setters>
+	</element>
+	<element name="Sanctified Cannon" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_SANCTIFIED_CANNON">
+		<description>
+			<p class="flavor">"These poor monsters need salvation, this is why I bless them. This blessing often comes in the form of a heavy ball of iron fired inside their gut."</p>
+			<p class="indent"><i>-Brother Ardeal</i></p>
+			<p class="indent"><b>Charged Shot: </b>: Once per turn, you can choose to replace one of your cannon attacks with a charged shot. Instead of a regular attack, you let loose a ball of destruction and death. Each creature in a 120-foot long and 5-foot wide line in front of you must succeed on a Dexterity saving throw or take 3d12 bludgeoning damage and be knocked prone on a failure.</p>
+			<p class="indent">You can use this ability only if you haven’t moved during this turn, and after you use the ability, your speed is 0 until the end of the current turn.</p>
+			<div element="ID_SGEH_WEAPON_PROPERTY_SPECIAL_CANNON" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="rarity">uncommon</set>
+			<set name="type">Firearm, cannon</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="90">90 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">120/210</set>
+			<set name="damage" type="piercing">3d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS</set>
+			<set name="barrel">1</set>
+		</setters>
+	</element>
+	<element name="Damascena" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_MAGIC_ITEM_DAMASCENA">
+		<description>
+			<p class="flavor">"Immolation is a sign of purity, and in death they shall be cleansed."</p>
+			<p>This basic technology invented by the Scions sacrifices lead bullets to generate powerful azure flames that scorch the abhorrent. This device is an effort to replicate the magical ability possessed by a select few.</p>
+			<p>As an action, you can cause the damascena to project blue flames in a 15-foot cone in front of you. Each creature in the cone must make a Dexterity saving throw (DC 11 + your proficiency bonus), taking 4d4 fire damage + a number of d4s equal to your proficiency bonus on a failed save, or half as much damage on a successful one. Each use of the damascena consumes 5 lead bullets.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="50">50 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">uncommon</set>
+		</setters>
+	</element>
+	<element name="Bag of Cannonballs" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_MAGIC_ITEM_BAG_OF_CANNONBALLS">
+		<description>
+			<p>You can store up to 100 cannonballs in this bag. The bag weighs 3 lbs, no matter how many cannonballs are stored. You can store or take out up to 3 cannonballs at a time once on each of your turns with no actions required.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">uncommon</set>
+		</setters>
+	</element>
+	<element name="Scionic Armament" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_SCIONIC_ARMAMENT_MELEE">
+		<description>
+			<p>The Scions'weapons – whether dead or alive – are constructed from the bones of formidable monsters which are then tortured with strong lightning, granting twisted appearance and savage fury to the armament. The weapon’s osseous component grants it ancient strength, and the electricity that dances across its body brutalizes all who come in contact with it.</p>
+			<p>Scionic weapons all require attunement. When attuning to such a weapon, a creature takes 2d8 lightning damage.</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon, which deals an additional 1d6 lightning damage on a hit. This weapon has the Explosive Retreat property.</p>
+			<p><b>Explosive Retreat. </b>When you damage a creature with this weapon, you can choose to detonate the creature. The creature must make a DC 14 Dexterity saving throw, taking 3d8 lightning damage on a failure, or half as much damage on a success. The detonation pushes you 10 feet away from the creature. Once used, this property can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Any melee weapon">Weapon</set>
+			<set name="rarity">rare</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="weapon">(ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE)</set>
+			<set name="name-format">Scionic {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Scionic Armament" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_SCIONIC_ARMAMENT_RANGED">
+		<description>
+			<p>The Scions'weapons – whether dead or alive – are constructed from the bones of formidable monsters which are then tortured with strong lightning, granting twisted appearance and savage fury to the armament. The weapon’s osseous component grants it ancient strength, and the electricity that dances across its body brutalizes all who come in contact with it.</p>
+			<p>Scionic weapons all require attunement. When attuning to such a weapon, a creature takes 2d8 lightning damage.</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you make attacks using this weapon, you fire electricity generated from the armament and can ignore the ammunition, barrel, or reload property of the weapon, dealing lightning damage instead of the weapon’s normal damage. This weapon has the Guiding Fury property.</p>
+			<p><b>Guiding Fury. </b>While holding this weapon, you can unleash the rage held within its bones to make a ranged weapon attack with advantage. On a hit, you deal the weapon’s damage and lightning streaks from the target to a different creature of your choice within 30 feet of it. Make a ranged weapon attack against the new target, and on a hit, deal the weapon’s damage and the lightning streaks again.</p>
+			<p>A creature can be targeted only once by each use of guiding fury. Once used, this property can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Any ranged weapon">Weapon</set>
+			<set name="rarity">rare</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="weapon">(ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED)</set>
+			<set name="name-format">Scionic {{parent}}</set>
+		</setters>
+	</element>
+		<element name="Scionic Armament" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_SCIONIC_ARMAMENT_SPELLCASTING">
+		<description>
+			<p>The Scions'weapons – whether dead or alive – are constructed from the bones of formidable monsters which are then tortured with strong lightning, granting twisted appearance and savage fury to the armament. The weapon’s osseous component grants it ancient strength, and the electricity that dances across its body brutalizes all who come in contact with it.</p>
+			<p>Scionic weapons all require attunement. When attuning to such a weapon, a creature takes 2d8 lightning damage.</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this focus and can cast the <i>Shocking Grasp</i> cantrip, using your spellcasting modifier. When you roll a 1 or 2 on a damage die for a spell that deals lightning damage, you can reroll the die and must use the new roll, even if the new roll is a 1 or 2. This weapon has the Ionized Conduit property.</p>
+			<p><b>Ionized Conduit. </b>As a bonus action, you can increase the polarity of the focus. For the next minute, creatures you target with spells that deal lightning damage have a -3 penalty to their saving throw against that spell if they are wearing or carrying metal. Once used, this property can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Any spellcasting focus">Spellcasting Focus</set>
+			<set name="rarity">rare</set>
+			<set name="container">Arcane Focus</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="weapon">(ID_INTERNAL_WEAPON_CATEGORY_SPELLCASTING)</set>
+			<set name="name-format">Scionic {{parent}}</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" />
+		</rules>
+	</element>
+	<element name = "Ravenous Gazer (Glaive)" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_RAVENOUS_GAZER_UNTRANSFORMED">
+		<description>
+			<p class="flavor">Acquiring forbidden knowledge always comes at a cost.</p>
+			<p><b>Trick Weapon.</b> Upon acquiring this weapon, also add "Ravenous Gazer (Spellcasting Focus)" to your inventory. As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the gazer is a glaive. In its transformed state, the gazer is a glaive which can be used as a spellcasting focus.</p>
+			<p>Any creature that attunes to this glaive is considered proficient with it. You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p>To transform this weapon you must feed it your blood: each time you shift this weapon into its transformed state, or start your turn with the glaive in its transformed state, you take 1d4 necrotic damage, which cannot be reduced in any way. This damage cannot break your concentration. While in its transformed state, the glaive grants you a +1 bonus to spell attack rolls, increases your spell save DC by 1, and gives you truesight out to 30 feet.</p>
+			<div element="ID_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" />
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="ehnancement">0</set>
+			<set name="type" addition="glaive">Weapon</set>
+			<set name="weapon">Glaive</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE</set>
+		</setters>
+		<rules>
+			<grant type="Magic Item" id="ID_SGEH_WEAPON_RAVENOUS_GAZER_TRANSFORMED" />
+		</rules>
+	</element>
+		<element name="Ravenous Gazer (Spellcasting Focus)" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_RAVENOUS_GAZER_TRANSFORMED">
+		<description>
+			<p class="flavor">Acquiring forbidden knowledge always comes at a cost.</p>
+			<p><b>Trick Weapon.</b> Upon acquiring this weapon, also add "Ravenous Gazer (Glaive)" to your inventory. As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its transformed state, the gazer is a glaive which can be used as a spellcasting focus.To transform this weapon you must feed it your blood: each time you shift this weapon into its transformed state, or start your turn with the glaive in its transformed state, you take 1d4 necrotic damage, which cannot be reduced in any way. This damage cannot break your concentration. While in its transformed state, the glaive grants you a +1 bonus to spell attack rolls, increases your spell save DC by 1, and gives you truesight out to 30 feet.</p>
+			<p>Any creature that attunes to this glaive is considered proficient with it. You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<div element="ID_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" />
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare</set>
+			<set name="ehnancement">0</set>
+			<set name="type" addition="glaive">Weapon</set>
+			<set name="weapon">Spellcasting Focus</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE</set>
+		</setters>
+		<rules>
+			<grant type="item" id="ID_SGEH_WEAPON_SANCTIFIED_PARTISAN" />
+		</rules>
+	</element>
+	<element name="Sanctified Partisan (Shield and Spear)" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_SANCTIFIED_PARTISAN_UNTRANSFORMED">
+		<supports></supports>
+		<description>
+			<p class="flavor">One of the most versatile weapons of the church.</p>
+			<p><b>Trick Weapon.</b> Upon acquiring this item, also add "Sanctified Partisan (Glaive)" to your inventory. As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the sanctified partisan is a spear and a shield. In its transformed state, the spear is sheathed by the shield, which retracts into a massive blade; the weapon becomes a glaive.</p>
+			<p>Any creature that attunes to this glaive is considered proficient with it. You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><b>Untransformed. </b>Using this pair of weapons together requires the spear to be held in one hand and the shield in your other. When you are targeted by a melee weapon attack, you can use your reaction to deflect with the shield, gaining a +2 bonus to your AC against that attack. If the attack misses, you can immediately make a single melee weapon attack with the spear as part of the same reaction.</p>
+			<div element="ID_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+		</description>
+		<setters>
+			<set name="keywords">shield and spear, glaive</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" />
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="ehnancement">0</set>
+			<set name="type" addition="spear">Weapon</set>
+			<set name="type" addition="shield">Weapon</set>
+			<set name="weapon">Shield and Spear</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR, ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+		</setters>
+	</element>
+	<element name="Sanctified Partisan (Glaive)" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_SANCTIFIED_PARTISAN_TRANSFORMED">
+		<supports></supports>
+		<description>
+			<p class="flavor">One of the most versatile weapons of the church.</p>
+			<p><b>Trick Weapon.</b> Upon acquiring this item, also add "Sanctified Partisan (Shield and Spear)" to your inventory. As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the sanctified partisan is a spear and a shield. In its transformed state, the spear is sheathed by the shield, which retracts into a massive blade; the weapon becomes a glaive.</p>
+			<p>Any creature that attunes to this glaive is considered proficient with it. You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p><b>Transformed. </b>This glaive doesn’t have the Heavy property. When you hit with an attack using this weapon, as part of the attack, you can pierce the target, transform the weapon, and only pull out the spear. The shield remains in the target's body, impaling it. An impaled creature takes 1d4 slashing damage at the start of each of its turns and its movement speed is reduced by 15 feet. To remove the shield, the impaled target can use its action to make a DC 12 Strength check. On a success, the shield is removed and falls at the target’s feet. If you are within 5 feet of the shield, you can use a bonus action to retrieve and don it.</p>
+			<div element="ID_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+		</description>
+		<setters>
+			<set name="keywords">shield and spear, glaive</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" />
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+			<set name="ehnancement">0</set>
+			<set name="type" addition="glaive">Weapon</set>
+			<set name="weapon">Glaive</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE</set>
+		</setters>
+	</element>
+	<element name="Galvanized Claw (Claw)" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_GALVANIZED_CLAW_TRANSFORMED">
+		<supports></supports>
+		<description>
+			<p class="flavor">Ripping the flesh of the beasts they slay to fashion ferocious weapons is something hunters have gotten remarkably good at over the course of their hunts.</p>
+			<p><b>Trick Weapon.</b> Upon acquiring this item, also add "Galvanized Claw (Claw)" to your inventory. As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the claw is a sinewy leather gauntlet, made from the muscle and hide of a galvanized prowler. In its transformed state, the claw surges with electrical energy, merging with its wearer’s forearm and turning into a monstrous claw.</p>
+			<p><b>Transformed. </b>The gauntlet merges with your form, turning your hand into an aberrant claw that you cannot be disarmed of. This claw changes the damage of your unarmed strikes to 1d8, the damage type to slashing, and you can use your Dexterity or Strength modifier for attack and damage rolls made with it. You gain a +1 bonus to attack and damage rolls made with it.</p>
+			<p class="indent">When you use the Attack action with this claw, you can make one attack with this claw as a bonus action. In addition, if you have temporary hit points, when you hit with a melee attack using this claw, you deal an additional 1d8 lightning damage.</p>
+			<p class="indent">The claw is too unwieldy to use for delicate handling, such as activating intricate mechanisms (like the trigger of a firearm) or picking locks with thieves’ tools.</p>
+			<div element="ID_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+		</description>
+		<setters>
+			<set name="keywords">claw</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" />
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="ehnancement">0</set>
+			<set name="type" addition="shield">Gauntlet</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR, ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+		</setters>
+	</element>
+	<element name="Galvanized Claw (Gauntlet)" type="Magic Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_GALVANIZED_CLAW_UNTRANSFORMED">
+		<supports></supports>
+		<description>
+			<p class="flavor">Ripping the flesh of the beasts they slay to fashion ferocious weapons is something hunters have gotten remarkably good at over the course of their hunts.</p>
+			<p><b>Trick Weapon. </b>Upon acquiring this item, also add "Galvanized Claw (Claw)" to your inventory. As a bonus action, you can switch between the transformed and untransformed states of this weapon. In its untransformed state, the claw is a sinewy leather gauntlet, made from the muscle and hide of a galvanized prowler. In its transformed state, the claw surges with electrical energy, merging with its wearer’s forearm and turning into a monstrous claw.</p>
+			<p><b>Untransformed. </b>The bestial hide invigorates you, giving you the lightning fast reflexes of the galvanized prowler slaughtered to make this gauntlet; you have advantage on initiative rolls. In addition, this gauntlet feeds off of your power. If you have temporary hit points, when you hit with a melee attack, you deal an additional 1d6 lightning damage.</p>
+			<p class="indent">The gauntlet has 3 charges and regains all expended charges daily at dawn. When you take lighting or thunder damage, you can use your reaction to expend 1 charge to instead take no damage and gain a number of temporary hit points equal to the damage you would have taken.</p>
+			<div element="ID_SGEH_WEAPON_PROPERTY_TRICK_WEAPON" />
+		</description>
+		<setters>
+			<set name="keywords">gauntlet</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" />
+			<set name="slot"></set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+			<set name="ehnancement">0</set>
+			<set name="type" addition="glaive">Weapon</set>
+			<set name="weapon">Claw</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE</set>
+		</setters>
+	</element>
+</elements>

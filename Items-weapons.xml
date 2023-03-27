@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+				<!-- Simple Ranged-->
+	<element name="Blunderbuss" type="Weapon" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_BLUNDERBUSS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_SGEH_WEAPON_PROPERTY_FIREARM, ID_SGEH_WEAPON_PROPERTY_FIREARM_SPREADFIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_SGEH_WEAPON_PROPERTY_FIREARM_BARREL, ID_SGEH_WEAPON_PROPERTY_BLARING, ID_SGEH_WEAPON_PROPERTY_FIREARM_SPREADFIRE,ID_SGEH_WEAPON_PROPERTY_TWINNED_BARREL</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">20</set>
+			<set name="damage" type="piercing">2d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS</set>
+			<set name="barrel">2(S)</set>
+		</setters>
+	</element>
+	<element name="Flintlock" type="Weapon" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_FLINTLOCK">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_SGEH_WEAPON_PROPERTY_FIREARM, ID_SGEH_WEAPON_PROPERTY_FIREARM_BARREL,ID_SGEH_WEAPON_PROPERTY_BLARING</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">40/120</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS</set>
+			<set name="barrel">1(F)</set>
+		</setters>
+	</element>
+				<!--Martial Ranged-->
+	<element name="Cannon" type="Weapon" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_CANNON">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_SGEH_WEAPON_PROPERTY_FIREARM,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_SGEH_WEAPON_PROPERTY_FIREARM_BARREL, ID_SGEH_WEAPON_PROPERTY_ARTILLERY,ID_SGEH_WEAPON_PROPERTY_BOOMING,ID_SGEH_WEAPON_PROPERTY_CONCUSSIVE</supports>
+		<description>
+			<p></p>
+			<div element="ID_SGEH_WEAPON_PROPERTY_SPECIAL_CANNON" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">800</set>
+			<set name="weight" lb="90">90 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">120/210</set>
+			<set name="damage" type="piercing">3d10</set>
+			<set name="proficiency">ID_SGEH_WEAPON_PROFICIENCY_CANNON</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Cannon)" type="Proficiency" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_PROFICIENCY_CANNON">
+		<supports>Weapon,Martial,Ranged,ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_DAMAGE_TYPE_PIERCING,ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_SGEH_WEAPON_PROPERTY_FIREARM,ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_SGEH_WEAPON_PROPERTY_FIREARM_BARREL, ID_SGEH_WEAPON_PROPERTY_ARTILLERY</supports>
+	</element>
+	<element name="Rifle" type="Weapon" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_SGEH_WEAPON_PROPERTY_FIREARM,ID_SGEH_WEAPON_PROPERTY_FIREARM_BARREL, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,ID_SGEH_WEAPON_PROPERTY_BLARING,ID_SGEH_WEAPON_PROPERTY_STEADY,ID_SGEH_WEAPON_PROPERTY_TWINNED_BARREL</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">150/600</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS</set>
+			<set name="barrel">2(S)</set>
+		</setters>
+	</element>
+	<element name="Pistol" type="Weapon" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_SGEH_WEAPON_PROPERTY_FIREARM, ID_SGEH_WEAPON_PROPERTY_FIREARM_BARREL,ID_SGEH_WEAPON_PROPERTY_BLARING,ID_SGEH_WEAPON_PROPERTY_FAN_FIRE</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">80/320</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS</set>
+			<set name="barrel">6(S)</set>
+		</setters>
+	</element>
+					<!--Martial Melee-->
+	<element name="Scythe" type="Weapon" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_SCYTHE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS</set>
+		</setters>
+	</element>
+	<element name="Cleaver" type="Weapon" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_CLEAVER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLEAVER</set>
+			<set name="versatile">1d12</set>
+		</setters>
+	</element>
+		<element name="Weapon Proficiency (Cleaver)" type="Proficiency" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLEAVER">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_CLEAVER</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLEAVER" />
+		</rules>
+	</append>
+					<!--Ammunition-->
+	<element name="Lead Bullets (10)" type="Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ITEM_LEADBULLET">
+		<description>
+			<p>The lead bullet is the standard ammunition for every firearm, unless stated otherwise.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Cannonball" type="Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ITEM_CANNONBALL">
+		<description>
+			<p>A large, spherical iron projectile, the cannonball is used as ammunition for the cannon.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="weight" lb="9">9 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Explosive Bullets (10)" type="Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ITEM_EXPLOSIVEBULLETS">
+		<description>
+			<p class="flavor">Requires a weapon <i>without</i> the <b>Spread Fire</b> property</p>
+			<p>On a hit, each creature within 5 feet of the target must make a Dexterity saving throw against your Firearm save DC or suffer 1d8 fire damage. If the weapon misses, the ammunition fails to detonate.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">40</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Scatter Bullets (10)" type="Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ITEM_SCATTERBULLETS">
+		<description>
+			<p class="flavor">Requires a weapon <i>with</i> the <b>Spread Fire</b> property</p>
+			<p>This bullet ignores the spread fire property and is fired like a standard bullet. On a hit, the target takes your normal weapon damage and the bullet explodes, sending shrapnel flying in a 15-foot cone behind the target. Each creature in the area must succeed on a Dexterity saving throw against your Firearm save DC or take damage equal to your weapon damage.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Explosive Cannonball" type="Item" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ITEM_EXPLOSIVECANNONBALL">
+		<description>
+			<p>On a hit, each creature within 10 feet of the target must make a Dexterity saving throw against your Firearm save DC or suffer 2d8 fire damage. If the weapon misses, the ammunition fails to detonate.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="12">12 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+			<!--Supports-->
+	<element name="Spread Fire" type="Weapon Property" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_PROPERTY_FIREARM_SPREADFIRE">
+		<description>
+			<p>A weapon that has the spread fire property can’t make a normal single-target attack, instead spraying a cone area in front you of length equal to its normal range (For example, a blunderbuss with‘range 20’will fire in a 20-foot cone in front of you). Each creature in the area must succeed on a Dexterity saving throw against your Firearm save DC or take the weapon's normal damage.</p>
+		</description>
+	</element>
+	<element name="Barrel" type="Weapon Property" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_PROPERTY_FIREARM_BARREL">
+		<description>
+			<p>The weapon can be fired a number of times equal to the number of bullets its barrel can hold (written as Barrel X) before it must be reloaded according to its fast or slow property (F or S, respectively).</p>
+			<ul>
+				<li><strong>Fast reload. </strong>You must spend 1 attack or 1 action or 1 bonus action to reload this firearm. You must have one free hand to do so.</li>
+				<li><strong>Slow reload. </strong>You must spend 1 attack or 1 action to reload this firearm. You must have one free hand to do so.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Firearm" type="Weapon Property" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_PROPERTY_FIREARM">
+		<description>
+			<p>Some firearm and ammunition properties require your target to make a saving throw to avoid the effects. The saving throw DC is calculated as follows:</p>
+			<p class="indent">Firearm save DC = 8 + your proficiency bonus + your Dexterity modifier</p>
+		</description>
+	</element>
+	<element name="Artillery" type="Weapon Property" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_PROPERTY_ARTILLERY">
+		<description>
+			<p>You must use your Strength modifier, instead of Dexterity, for the attack, damage rolls, and Firearm save DC of this weapon. A cannon can only be reloaded with an action.</p>
+		</description>
+	</element>
+	<element name="Blaring" type="Weapon Property" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_PROPERTY_BLARING">
+		<description>
+			<p>Firing this weapon makes a thunderous crack. The sound can be heard from up to 100 feet away. Firing a weapon with this property makes it hard to go undetected; you have disadvantage on Dexterity (Stealth) checks to hide until the start of your next turn. In addition, if a creature is within the area of the sound blast, it has advantage on Wisdom (Perception) checks against you.</p>
+		</description>
+	</element>
+	<element name="Booming" type="Weapon Property" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_PROPERTY_BOOMING">
+		<description>
+			<p>The deflagration from firing this weapon makes a stupendous booming sound. The sound can be heard from up to 500 feet away. Firing this weapon makes it impossible to go undetected; you automatically fail Dexterity (Stealth) checks to hide until the start of your next turn. In addition, if a creature is within the area of the sound blast, it automatically succeeds on Wisdom (Perception) checks against you.</p>
+		</description>
+	</element>
+	<element name="Concussive" type="Weapon Property" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_PROPERTY_CONCUSSIVE">
+		<description>
+			<p>These weapons bludgeon as much as they pierce. When determining a creature's resistance or immunity to damage from this weapon, use the weaker of the target's resistance or immunity to piercing or to bludgeoning. For instance, if the creature were immune to piercing and had no resistance or immunity to bludgeoning damage, it would take full damage from a concussive weapon. Resistance to all physical damage applies as normal.</p>
+		</description>
+	</element>
+	<element name="Fan Fire" type="Weapon Property" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_PROPERTY_FAN_FIRE">
+		<description>
+			<p>You can quickly fire this weapon by slamming the hammer repeatedly. As an action, you fire a number of bullets in a row equal to your Dexterity modifier (minimum of 2, up to the entirety of the barrel). Each attack after the first suffers a cumulative -3 penalty to the attack roll. You cannot add any modifier to the damage roll of these attacks beyond the first (such as the bonus from your Dexterity modifier, the Sharpshooter feat, or a magic weapon's bonus to damage rolls). When you use this action, your speed becomes 0 until the end of your turn and attacks you make using the long range of the weapon automatically miss.</p>
+			<p>If you roll a 1 on any of the attack rolls, the weapon jams and can’t be used again until it is repaired. You can use an action to make a DC 15 Dexterity (Sleight of Hand) check, repairing the weapon on a success. Alternatively, you can spend 1 hour outside of combat to mend it, automatically succeeding on the check. If your check fails, the weapon is broken and must be mended in a specialist’s store at a quarter of the cost of the firearm.</p>
+		</description>
+	</element>	
+	<element name="Twinned Barrel" type="Weapon Property" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_PROPERTY_TWINNED_BARREL">
+		<description>
+			<p>This weapon has two barrels that can each hold a bullet and can both be loaded as part of reloading the weapon. You can fire both barrels of a double barrel weapon as part of an attack, instead of each barrel individually. Doing so empties the barrel of the weapon (as per the Barrel property) but increases the damage die of the weapon on a hit (from d4 to d6 to d8 to d10 to d12).</p>
+		</description>
+	</element>
+	<element name="Spread Fire" type="Weapon Property" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_PROPERTY_SPREAD_FIRE">
+		<description>
+			<p>A weapon that has the spread fire property can’t make a normal attack, instead spraying a cone in front of you with a length equal to its range (For example, a blunderbuss with‘range 20’will fire in a 20-foot cone in front of you). Each creature in the area must succeed on a Dexterity saving throw against your Firearm save DC or take the weapon's normal damage.</p>
+		</description>
+	</element>
+	<element name="Steady" type="Weapon Property" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_PROPERTY_STEADY">
+		<description>
+			<p> A weapon with this property can be stabilized for greater accuracy. As a bonus action, you give yourself a bonus to your next attack roll with this weapon this turn equal to your proficiency bonus, and attacking at long range doesn’t impose disadvantage on the attack roll. You can use this bonus action only if you haven’t moved during your turn, and after you use the bonus action, your speed is halved until the end of your turn.</p>
+		</description>
+	</element>
+	<element name="Trick Weapon" type="Weapon Property" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_WEAPON_PROPERTY_TRICK_WEAPON">
+		<description>
+			<p>Trick Weapons are weapons that can be transformed into alternate forms and have different abilities depending on said form. To be proficient with a trick weapon, a character must be proficient with both forms of the weapon.</p>
+			<p class="indent">If a character isn’t proficient with one of the forms of the weapon, they simply do not add their proficiency bonus to attack rolls made with that form of the weapon, as would be the case for not being proficient with a‘regular’weapon.</p>
+			<p class="indent">For example the <b>Serpent Bladewhip</b> is a whip in its untransformed form, and a rapier in its transformed version. If a character is proficient with the whip but not the rapier they can still access all the abilities of the weapon, but when they attempt to use the rapier for attack rolls, they do not add their proficiency bonus.</p>
+			<p class="indent">Due to the complexity of trick weapons, if a creature is not proficient with any of the forms of the weapon, they cannot use it in combat at all. They have disadvantage on attack rolls made with the weapon, can only transform the weapon as an action, and cannot use any special properties the weapon might have.</p>
+		</description>
+	</element>
+</elements>

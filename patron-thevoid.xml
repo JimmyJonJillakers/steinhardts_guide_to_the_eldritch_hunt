@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="The Void" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_THE_VOID">
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<p>These warlocks have made a pact with an eldritch being from the deepest depths of the Cosmos — a being that devours energy, holds the secrets of creation, and paves the way to the apocalypse. Pray that they are not aware of your presence. A deep fascination for the cosmos, or perhaps profound meditation on the heat death of the universe could’ve brought about the circumstances that lead to this pact. Very few are able to withstand such knowledge and power, and the few that do are often seen as mysterious and reclusive figures</p>
+			<p class="indent">Warlocks who strike a pact with the Void walk an eerie and dangerous path, focused on manipulating gravity and harnessing the immense power of black holes. Crushing their foes in condensed wells of gravity, whilst liberating themselves from the shackles that hold them, these warlocks carve their own destiny under the guidance of the cosmos.</p>
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_VOID_EXPANDED_SPELL_LIST"/>
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_VOID_FUGITE_OMNIS"/>
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_VOID_VORACIOUS_VOID"/>
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_VOID_GRAVITATIONAL_PULL"/>
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_VOID_WARP_GRAVITY"/>
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_VOID_OBLIVION"/>
+		</description>
+		<sheet display="false">
+			<description>You have made a pact with an eldritch being from the deepest depths of the Cosmos.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_VOID_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_VOID_FUGITE_OMNIS" level="1" />
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_VOID_VORACIOUS_VOID" level="1" />
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_VOID_GRAVITATIONAL_PULL" level="6" />
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_VOID_WARP_GRAVITY" level="10" />
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_VOID_OBLIVION" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_VOID_EXPANDED_SPELL_LIST">
+		<description>
+			<p>The Void lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5 class="caption">FIEND EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>fall, gravity leap</em></td></tr>
+				<tr><td>2nd</td><td><em>gravity storm, pressure cage</em></td></tr>
+				<tr><td>3rd</td><td><em>astral barrage, radiant slaughter</em></td></tr>
+				<tr><td>4th</td><td><em>fling, gravity barrier</em></td></tr>
+				<tr><td>5th</td><td><em>telekinesis, starfall</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>The Void lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_SGEH_SPELL_FALL</extend>
+			<extend>ID_SGEH_SPELL_GRAVITY_LEAP</extend>
+			<extend>ID_SGEH_SPELL_GRAVITY_STORM</extend>
+			<extend>ID_SGEH_SPELL_PRESSURE_CAGE</extend>
+			<extend>ID_SGEH_SPELL_ASTRAL_BARRAGE</extend>
+			<extend>ID_SGEH_SPELL_RADIANT_SLAUGHTER</extend>
+			<extend>ID_SGEH_SPELL_FLING</extend>
+			<extend>ID_SGEH_SPELL_GRAVITY_BARRIER</extend>
+			<extend>ID_PHB_SPELL_TELEKINESIS</extend>
+			<extend>ID_SGEH_SPELL_STARFALL</extend>
+		</spellcasting>
+	</element>
+	<element name="Fugite Omnis" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_VOID_FUGITE_OMNIS">
+		<description>
+			<p>At 1st level, you can partially ignore the shackles of gravity. You gain the ability to hover a few inches off the ground. You can ascend and descend as part of your movement. You can’t hover more than a foot above the ground, and fall if you are above that height. If you were to be knocked prone while hovering, you are instead made to stand on the ground.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Voracious Void" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_VOID_VORACIOUS_VOID">
+		<description>
+			<p>At 1st level, as a bonus action, you can create a miniature black hole, in the form of a 5-foot-radius sphere, centered on a point on the ground that you can see within 60 feet. This black hole has a domain of influence of 10 feet beyond its own radius. You must concentrate on this ability as you would a spell, and it lasts 1 minute. The black hole is considered difficult terrain for all creatures except for you.</p>
+			<p>When the sphere appears and at the start of each of your turns until the spell ends, unsecured objects within the domain of influence of the miniature black hole are pulled toward the sphere's center, ending in an unoccupied space as close to the center as possible.</p>
+			<p>As part of creating the sphere, and on subsequent turns as a bonus action, you can choose a creature within the domain of influence of the black hole, increasing the pull of gravity around them. They must succeed on a Strength saving throw against your spell save DC or be pulled straight toward the sphere's center, ending in an unoccupied space as close to the center as possible. A creature that enters the black hole’s space for the first time on a turn or starts its turn there takes 1d6 magical bludgeoning damage and has its movement speed halved until the start of its next turn.</p>
+			<p>Once you use this feature, you can’t use it again until you finish a long rest, unless you expend a warlock spell slot to use it again.</p>
+			<p>This miniature black hole grows with you. When your pact magic increases in power, so does this ability:</p>
+			<ul>
+				<li>At 3rd level in this class, creatures that enter the black hole for the first time on a turn are restrained for the duration. A restrained creature can free itself by using an action to make a Strength (Athletics) check against your spell save DC. On a success, the target escapes and is no longer restrained by the black hole.</li>
+				<li>At 5th level in this class, the domain of influence of the sphere increases to 20 feet and the damage to 2d6. A creature reduced to 0 hit points while inside the black hole is annihilated, along with any nonmagical items it is wearing or carrying.</li>
+				<li>At 7th level in this class, the radius of the black hole increases to 10 feet.</li>
+				<li>At 9th level in this class, the damage increases to 3d6 and the sphere’s domain of influence to 30 feet. You can summon the black hole at any point that you can see, not just on the ground. If the sphere is in the air, creatures restrained by it hover inside the black hole.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can create a 5 foot radius black hole centered on a grounded point you can see within 60 feet. This black hole pulls objects up to 10 feet beyond its own radius, creating difficult terrain. You must concentrate on this ability and it lasts 1 minute. When it appears and at the start of each of your turns that it's there, the black hole pulls unsecured objects within its domain toward its center. As a bonus action, you can choose a creature in the domain. This creature mus succeed on a Strength save against your spell save DC or be pulled straight to the sphere's center. A creature entering the hole's space or starting its turn there takes 1d6 magical bludgeoning damage and has its movement halved.</description>
+			<description level="3">You can create a 5 foot radius black hole centered on a grounded point you can see within 60 feet. This black hole pulls objects up to 10 feet beyond its own radius, creating difficult terrain. You must concentrate on this ability and it lasts 1 minute. When it appears and at the start of each of your turns that it's there, the black hole pulls unsecured objects within its domain toward its center. As a bonus action, you can choose a creature in the domain. This creature mus succeed on a Strength save against your spell save DC or be pulled straight to the sphere's center. A creature entering the hole's space or starting its turn there takes 1d6 magical bludgeoning damage and is restrained. It can free itself by making an Athletics check against your spell save DC.</description>
+			<description level="5">You can create a 5 foot radius black hole centered on a grounded point you can see within 60 feet. This black hole pulls objects up to 20 feet beyond its own radius, creating difficult terrain. You must concentrate on this ability and it lasts 1 minute. When it appears and at the start of each of your turns that it's there, the black hole pulls unsecured objects within its domain toward its center. As a bonus action, you can choose a creature in the domain. This creature mus succeed on a Strength save against your spell save DC or be pulled straight to the sphere's center. A creature entering the hole's space or starting its turn there takes 2d6 magical bludgeoning damage and is restrained. It can free itself by making an Athletics check against your spell save DC. Creatures reduced to 0 hp in the hole are annihilated along with their equipment.</description>
+			<description level="7">You can create a 10 foot radius black hole centered on a grounded point you can see within 60 feet. This black hole pulls objects up to 20 feet beyond its own radius, creating difficult terrain. You must concentrate on this ability and it lasts 1 minute. When it appears and at the start of each of your turns that it's there, the black hole pulls unsecured objects within its domain toward its center. As a bonus action, you can choose a creature in the domain. This creature mus succeed on a Strength save against your spell save DC or be pulled straight to the sphere's center. A creature entering the hole's space or starting its turn there takes 2d6 magical bludgeoning damage and is restrained. It can free itself by making an Athletics check against your spell save DC. Creatures reduced to 0 hp in the hole are annihilated along with their equipment.</description>
+			<description level="9">You can create a 10 foot radius black hole centered on a point you can see within 60 feet. This black hole pulls objects up to 30 feet beyond its own radius, creating difficult terrain. You must concentrate on this ability and it lasts 1 minute. When it appears and at the start of each of your turns that it's there, the black hole pulls unsecured objects within its domain toward its center. As a bonus action, you can choose a creature in the domain. This creature mus succeed on a Strength save against your spell save DC or be pulled straight to the sphere's center. A creature entering the hole's space or starting its turn there takes 3d6 magical bludgeoning damage and is restrained. It can free itself by making an Athletics check against your spell save DC. Creatures reduced to 0 hp in the hole are annihilated along with their equipment.</description>
+		</sheet>
+	</element>
+	<element name="Gravitational Pull" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_VOID_GRAVITATIONAL_PULL">
+		<description>
+			<p>At 6th level, when a creature you see is targeted by a ranged attack, if your Voracious Void is active, you can use your reaction to divert the strike. If the attack passes through the miniature black hole or its domain of influence, you can make a ranged spell attack. If you roll higher than their attack roll, you deflect the trajectory and the target takes no damage. If you roll lower, you reduce the damage by 1d6 + your Charisma modifier. If you roll a 20, the attack is deflected and streaks towards the center of the black hole, randomly hitting one of the creatures inside, if any are present.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>If a ranged attack targets a creature you can see and your Voracious Void is active, you can divert the attack. If the attack passes through Voracious Void, you can make a ranged spell attack parrying the ranged attack. If you roll lower than the ranged attack, reduce its damage by 1d6 + {{charisma:modifier}}. If you roll a 20 the attack hits a creature in the black hole.</description>
+		</sheet>
+	</element>
+	<element name="Warp Gravity" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_VOID_WARP_GRAVITY">
+		<description>
+			<p>At 10th level, you can bend gravity around you at will, allowing you to move through the air as if you were walking on solid ground. You gain a flying speed equal to your walking speed and can hover. You can grant these benefits to one creature that is touching you. They lose this flying speed immediately if they are no longer in contact with you.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="speed:fly" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Oblivion" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_VOID_OBLIVION">
+		<description>
+			<p>At 14th level, you can unleash the ravenous hunger of the void. When you use your Voracious Void ability, you can choose to let it run wild. In that case, rather than as a bonus action, whenever a creature starts its turn within the black hole or its domain of influence they must make the saving throw or be pulled to the center. You can choose a number of creatures equal to your Charisma modifier to not be affected by this effect, including yourself.</p>
+			<p>Once you use this feature, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet action="Voracious Void" usage="1/Long Rest">
+			<description>You can let your Voracious Void run wild. Whenever a creature starts its turn within the domain of a wild black hole, they must make the saving throw or be pulled into the center. You can choose up to {{charisma:modifier}} creatures to be immune to this effect.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Radiant" type="Deity" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_DEITY_RADIANT">
+		<description>
+			<p>The Radiant Church Worships the Radiant One, a god that was said to be able to heal all afflictions with his pure light. While the prayers of His worshippers are answered, He has not communicated with any of His followers since before the first church closed decades ago. He is the commander of the angels that guardian clerics summon, He gives the blades of radiance their powers of light, and it is said His magics are somehow involved in the creations of the epee solares.</p>
+		</description>
+		<setters>
+			<set name="setting">Luyarnha</set>
+			<set name="alignment">LG</set>
+			<set name="domains">Holy, Guardian</set>
+			<set name="symbol">A silver hilt on a pendant.</set>
+		</setters>
+	</element>
+</elements>

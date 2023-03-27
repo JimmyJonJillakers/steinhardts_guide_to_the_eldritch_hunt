@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Guardian Domain" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_CLERIC_GUARDIAN_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Clerics of the Radiant Church are venerated as saint-like figures, and those who walk the path of the guardian even more so. Such overwhelming praise was only heightened by the arrival of the scourge, and the countless heroic actions performed by the Church anchored it as a beacon of salvation in the heart of the citizens of Luyarnha. This abundant reverence has its risks, of course, though few dare point it out; a zealous crowd is best left well alone. Guardian domain clerics were the first to jump into combat against the beasts, and to this day haven't backed down from the battle, despite the pain and loss they have endured. Their protective spirit is embodied in their magic - summoning guardian angels - which swoop to their side, protecting any who would ask under their wings. Although the features of these angels can be unsettling, none would dare doubt their intentions.</p>
+			<h5 class="caption">GUARDIAN DOMAIN SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Cleric Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>compelled duel, protection from evil and good</em></td></tr>
+				<tr><td>3rd</td><td><em>aid, warding bond</em></td></tr>
+				<tr><td>5th</td><td><em>protection from energy, slow</em></td></tr>
+				<tr><td>7th</td><td><em>guardian of faith, otiluke's resilient sphere</em></td></tr>
+				<tr><td>9th</td><td><em>antilife shell, wall of force</em></td></tr>
+			</table>
+			<h3>Bonus Proficiencies</h3>
+			<p class="indent">At 1st level, you gain proficiency with heavy armor.</p>
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_PROTECTIVEMAGIC" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_CD_GUARDIAN_ANGEL" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_ANGELIC_PROTECTION" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_DIVINE_STRIKE" />
+			<div element="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_AURAOFDEFENSE" />
+		</description>
+		<sheet display="false">
+			<description>Clerics of the Radiant Church are venerated as saint-like figures, and those who walk the path of the guardian even more so.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMPELLED_DUEL" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AID" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLOW" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANTILIFE_SHELL" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" level="1"/>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_PROTECTIVEMAGIC" level="1"/>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_CD_GUARDIAN_ANGEL" level="2"/>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_ANGELIC_PROTECTION" level="6"/>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_DIVINE_STRIKE" level="8"/>
+			<grant type="Archetype Feature" id="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_AURAOFDEFENSE" level="17"/>
+		</rules>
+	</element>
+	<element name="Protective Magic" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_PROTECTIVEMAGIC">
+		<description>
+			<p>Starting at 1st level, when you cast a spell that restores hit points, the targeted creature also gains half as many temporary hit points (rounded down). If a spell targets multiple creatures, choose one creature that benefits from this effect.</p>
+		</description>
+		<sheet action="Special">
+			<description>When you cast a spell that restores hit points, the targeted creature also gains half as many temporary hit points</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Guardian Angel" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_CD_GUARDIAN_ANGEL">
+		<description>
+			<p>At 2nd level, you can use your Channel Divinity to summon a divine emissary to your aid.</p>
+			<p class="indent">As an action, you present your holy symbol, and in a flash of radiance, a guardian angel appears in an empty space of your choice within 5 feet of you. The angel is friendly to you and your companions, and obeys your commands. When you gain this feature, choose the nature of your angel: radiant or necrotic. This will affect abilities in the stat block.</p>
+			<p class="indent">See this creature's game statistics in the Guardian Angel stat block, which uses your proficiency bonus (PB) in several places. You determine the angel's appearance. Some angels take the form of a humanoid angelic figure dressed with pure garments, while many others espouse a more eldritch appearance.</p>
+			<p class="indent">In combat, the angel shares your initiative count, but it takes its turn immediately after yours. The only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the angel can take any action of its choice, not just Dodge.</p>
+			<p class="indent">The guardian appears for 1 hour, until it is reduced to 0 hit points, until you use this feature to summon the angel again, or until you die.</p>
+		</description>
+		<sheet>
+			<description>Summon a necrotic or radiant guardian angel within 5 feet of you for 1 hour. See the stat block for details.</description>
+			<description level="6">Summon a necrotic or radiant guardian angel within 5 feet of you for 1 hour. It has access to the <i>warding bond</i> spell. See the stat block for details.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Guardian Angel" supports="Guardian Angel" default="ID_SGEH_COMPANION_GUARDIAN_ANGEL" level ="2" />
+		</rules>
+	</element>
+	<element name="Angelic Protection" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_ANGELIC_PROTECTION">
+		<description>
+			<p>Starting at 6th level, you can summon your Guardian Angel to protect others. It casts <i>warding bond</i> on a friendly creature that it can see (you included) upon appearing, ignoring the components of the spell.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Divine Strike" type="Archetype Feature" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_DIVINE_STRIKE">
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turn +1d8 radiant damage with a weapon attack.</description>
+			<description level="14">Once on each of your turn +2d8 radiant damage with a weapon attack.</description>
+		</sheet>
+	</element>
+	<element name="Aura of Defense" type="Archetype" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_AURAOFDEFENSE">
+		<description>
+			<p>At 17th level, when your Guardian Angel casts warding bond, it can target a number of allied creatures (including you) equal to your Wisdom modifier. The spell functions as if the angel had created a warding bond with each individual creature. In addition, upon being summoned, the Guardian Angel gains temporary hit points equal to 5 times the number of creatures targeted by the spell.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+		<element name="Guardian Angel" type="Companion" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_COMPANION_GUARDIAN_ANGEL">
+		<supports>Guardian Angel</supports>
+		<description>
+			<p>As an action, you present your holy symbol, and in a flash of radiance, a guardian angel appears in an empty space of your choice within 5 feet of you. The angel is friendly to you and your companions, and obeys your commands. When you gain this feature, choose the nature of your angel: radiant or necrotic. This will affect abilities in the stat block.</p>
+			<p class="indent">You determine the angel's appearance. Some angels take the form of a humanoid angelic figure dressed with pure garments, while many others espouse a more eldritch appearance.</p>
+			<p class="indent">In combat, the angel shares your initiative count, but it takes its turn immediately after yours. The only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the angel can take any action of its choice, not just Dodge.</p>
+			<p class="indent">The guardian appears for 1 hour, until it is reduced to 0 hit points, until you use this feature to summon the angel again, or until you die.</p>
+		</description>
+		<setters>
+			<set name="strength">10</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">14</set>
+			<set name="intelligence">13</set>
+			<set name="wisdom">15</set>
+			<set name="charisma">11</set>
+			<set name="ac">10 + proficiency (natural armor)</set>
+			<set name="hp">5 + 5 times cleric level</set>
+			<set name="speed">0 ft., fly 10 ft.</set>
+			<set name="immunities">Radiant or Necrotic</set>
+			<set name="conditionImmunities">blinded, charmed, frightened, grappled, prone, restrained</set>
+			<set name="languages">understands the languages you speak</set>
+			<set name="skills"></set>
+			<set name="senses">blindsight 60ft., passive Perception 12</set>
+			<set name="type">Celestial</set>
+			<set name="size">Medium</set>
+			<set name="alignment">lawful good</set>
+			<set name="challenge">1</set>
+			<set name="traits">ID_SGEH_COMPANION_TRAIT_INCORPOREAL_BEING</set>
+			<set name="actions">ID_SGEH_COMPANION_ACTION_DIVINEBLADE,ID_SGEH_COMPANION_ACTION_REALITYWARP,ID_SGEH_COMPANION_ACTION_SELFSACRIFICE</set>
+			<set name="actions" level="6">ID_PHB_SPELL_WARDING_BOND</set>
+			<set name="actions" level="8">ID_SGEH_ARCHETYPE_FEATURE_GUARDIAN_DOMAIN_DIVINE_STRIKE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="proficiency" />
+			<stat name="companion:ac" value="10" />
+			<stat name="companion:hp:max" value="5" bonus="base" />
+			<stat name="companion:hp:max" value="level:cleric" />
+			<stat name="companion:hp:max" value="level:cleric" />
+			<stat name="companion:hp:max" value="level:cleric" />
+			<stat name="companion:hp:max" value="level:cleric" />
+			<stat name="companion:hp:max" value="level:cleric" />
+			<stat name="companion:speed" value="0" bonus="base" />
+			<stat name="companion:speed:fly" value="10" bonus="base" />
+			<stat name="companion:proficiency" value="proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Divine Blade" type="Companion Action" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_COMPANION_ACTION_DIVINEBLADE">
+		<description>
+			<p>Melee Weapon Attack: your spell attack modifier to hit, range 10 ft., one target you can see. Hit: 1d6 + PB radiant or necrotic damage and the angel regains half as many hit points.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: your spell attack modifier to hit, range 10 ft., one target you can see. Hit: 1d6 + PB radiant or necrotic damage and the angel regains half as many hit points.</description>
+		</sheet>
+	</element>
+	<element name="Reality Warp" type="Companion Action" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_COMPANION_ACTION_REALITYWARP">
+	<description>
+		<p>The Angel teleports to an empty space adjacent to an allied creature within 60 feet of it</p>
+	</description>
+	<sheet>
+	 <description>The Angel teleports to an empty space adjacent to an allied creature within 60 feet of it</description>
+	</sheet>
+	</element>
+	<element name="Self Sacrifice" type="Companion Action" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_COMPANION_ACTION_SELFSACRIFICE">
+	<description>
+		<p>When a creature other than the angel is hit by an attack while within 30 feet of the angel, the angel can use its reaction to teleport into the creature’s space, taking the damage instead of the creature. To do so, the angel must be able to see both the creature and the attacker.</p>
+	</description>
+	<sheet>
+		<description>When a creature other than the angel is hit by an attack while within 30 feet of the angel, the angel can use its reaction to teleport into the creature’s space, taking the damage instead of the creature. To do so, the angel must be able to see both the creature and the attacker.</description>
+	</sheet>
+	</element>
+	<element name="Incorporeal Being" type="Companion Trait" source="Steinhardt's Guide to the Eldritch Hunt" id="ID_SGEH_COMPANION_TRAIT_INCORPOREAL_BEING">
+	<description>
+		<p>The angel can move through other creatures as if they were difficult terrain.</p>
+	</description>
+	<sheet>
+		<description>The angel can move through other creatures as if they were difficult terrain.</description>
+	</sheet>
+	</element>
+</elements>
