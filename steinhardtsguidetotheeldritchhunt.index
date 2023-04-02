@@ -13,9 +13,9 @@ Inspired by Lovecraftian Horror and the Soulsborne franchise, you'll discover a 
 		<file name="class-jaeger.xml" url="https://raw.githubusercontent.com/JimmyJonJillakers/steinhardts_guide_to_the_eldritch_hunt/main/class-jaeger.xml" />
 		<file name="race-accursedtiefling.xml" url="https://raw.githubusercontent.com/JimmyJonJillakers/steinhardts_guide_to_the_eldritch_hunt/main/race-accursedtiefling.xml" />
 		<file name="race-cursedblood.xml" url="https://raw.githubusercontent.com/JimmyJonJillakers/steinhardts_guide_to_the_eldritch_hunt/main/race-cursedblood.xml" />
-		<file name="race-demidritch.xml" url="https://raw.githubusercontent.com/JimmyJonJillakers/steinhardts_guide_to_the_eldritch_hunt/main/race-.xml" />
-		<file name="race-manikin.xml" url="https://raw.githubusercontent.com/JimmyJonJillakers/steinhardts_guide_to_the_eldritch_hunt/main/race-.xml" />
-		<file name="race-scourgeborn.xml" url="https://raw.githubusercontent.com/JimmyJonJillakers/steinhardts_guide_to_the_eldritch_hunt/main/race-.xml" />
+		<file name="race-demidritch.xml" url="https://raw.githubusercontent.com/JimmyJonJillakers/steinhardts_guide_to_the_eldritch_hunt/main/race-demidritch.xml" />
+		<file name="race-manikin.xml" url="https://raw.githubusercontent.com/JimmyJonJillakers/steinhardts_guide_to_the_eldritch_hunt/main/race-manikin.xml" />
+		<file name="race-scourgeborn.xml" url="https://raw.githubusercontent.com/JimmyJonJillakers/steinhardts_guide_to_the_eldritch_hunt/main/race-scourgeborn.xml" />
 		<file name="Items-weapons.xml" url="https://raw.githubusercontent.com/JimmyJonJillakers/steinhardts_guide_to_the_eldritch_hunt/main/Items-weapons.xml" />
 		<file name="items-magicitems.xml" url="https://raw.githubusercontent.com/JimmyJonJillakers/steinhardts_guide_to_the_eldritch_hunt/main/items-magicitems.xml" />
 		<file name="feats.xml" url="https://raw.githubusercontent.com/JimmyJonJillakers/steinhardts_guide_to_the_eldritch_hunt/main/feats.xml" />
